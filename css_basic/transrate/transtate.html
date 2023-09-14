@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .transrate-box{
+            display: inline-block;
+            background: rgb(206, 109, 109);
+            width: 100px;
+            height: 100px;
+            animation: shimmy 0.2s infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes shimmy{
+            0%{
+                transform: translate();
+                
+            }
+
+            25%{
+                /* transform: translate(200px,200px); */
+                transform: translate(0px,200px);
+                background: blue;
+                
+            }
+
+            50%{
+                /* transform: translate(0px,0px); */
+                transform: translate(200px,200px);
+                background: rgb(0, 0, 0);
+            }
+
+            75%{
+                /* transform: translate(200px,200px); */
+                transform: translate(200px,0px);
+                background: rgb(54, 177, 49);
+            }
+
+            100%{
+                transform: translate(0px, 0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="transrate-box"></div>
+    
+</body>
+</html>
