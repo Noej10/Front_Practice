@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+        border: 3px solid black;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 600px;
+        height: 800px;
+    }
+
+    .flex-item{
+        color: black;
+        font-size: 40px;
+        padding: 20px;
+        
+    }
+
+    .item1{
+        background: red;
+        text-align: center;
+        order: 3;
+        flex: 1;
+    }
+
+    .item2{
+        background: blue;
+        order: 2;
+        text-align: center;
+        flex: 2;
+    }
+
+    .item3{
+        background: yellow;
+        text-align: center;
+        order: 1;
+        flex: 1;
+    }
+
+
+</style>
+
+<body>
+    
+    <div class="container">
+        <div class="flex-item item1">1번</div>
+        <div class="flex-item item2">2번</div>
+        <div class="flex-item item3">3번</div>
+
+
+
+    </div>
+
+
+</body>
+</html>
