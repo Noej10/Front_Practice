@@ -1,0 +1,19 @@
+.khLogo-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 116px;
+    width: 974px;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.khLogo{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 83px;
+    margin-left: 445px;
+    margin-right: 445px;
+    margin-bottom: 85px;
+}

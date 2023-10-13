@@ -10,6 +10,13 @@
  border-bottom-width: 1px;
  border-bottom-style: solid;
  border-bottom-color: #4D4D4D;
+
+ position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+ z-index: 200;
 }
 
 /* 헤더 왼쪽*/

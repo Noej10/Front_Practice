@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Practice2</h1>
+    <input type="number" style="width: 100px;" id="firstNum">
+    <select style="width: 50px;" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" style="width: 100px;" id="secondNum">
+    <button onclick="opreation();">=</button>
+    <input readonly="true" type="text" style="width: 100px;" id="result">
+
+
+    <script>
+        function opreation(){
+          let firstNum = document.getElementById('firstNum');
+          let secondNum = document.getElementById('secondNum');
+          let result = document.getElementById('result');
+          let operator = document.getElementById('operator');
+
+          
+          
+          switch(operator.value){
+            case '+':{
+                result.value = Number(firstNum.value) + Number(secondNum.value);
+            }break;
+            case '-':{
+                result.value = Number(firstNum.value) - Number(secondNum.value);
+            }break;
+            case '*':{
+                result.value = Number(firstNum.value) * Number(secondNum.value);
+            }break;
+            case '/':{
+                if(isNaN(Number(firstNum.value) / Number(secondNum.value))||Infinity==(Number(firstNum.value) / Number(secondNum.value))){
+                    result.style.background = 'red';
+                    result.style.color = 'white';
+                    result.value = "연산불가"
+                }else{
+                result.value = Number(firstNum.value) / Number(secondNum.value);
+              }
+            }break;
+            case '%':{
+                if(isNaN(Number(firstNum.value) % Number(secondNum.value))||Infinity==(Number(firstNum.value) % Number(secondNum.value))){
+                    result.style.background = 'red';
+                    result.style.color = 'white';
+                    result.value = "연산불가"
+                }else{
+                    result.value = Number(firstNum.value) % Number(secondNum.value);
+              }
+            }break;
+          }
+
+          console.log(result.value);
+
+
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

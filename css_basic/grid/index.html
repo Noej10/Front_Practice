@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 50px;
+            padding: 10px;
+            background: darkgray;
+            width: 100%;
+            height: 500px;
+        }
+
+
+
+
+
+    </style>
+
+
+<body>
+    <div style="display: grid; grid-template-columns: 100px 100px 100px;">
+
+        <div style="background: rgb(1, 1, 134);">1번</div>
+
+        <div style="background-color: rgb(107, 29, 29);">2번</div>
+
+        <div style="background-color: rgb(107, 29, 29);">2번</div>
+    </div>
+    <br>
+
+    <div style="display: grid; grid-template-columns: 100px 100px 100px; column-gap: 30px;">
+
+        <div style="background: rgb(1, 1, 134);">1번</div>
+
+        <div style="background-color: rgb(107, 29, 29);">2번</div>
+
+        <div style="background-color: rgb(107, 29, 29);">2번</div>
+    </div>
+
+
+    <div class="grid-container">
+
+        <div class="item1">1번</div>
+        <div class="item2">2번</div>
+        <div class="item3" style="background: red;">3번</div>
+        <div class="item4">4번</div>
+        <div class="item5">5번</div>
+        <div class="item6">6번</div>
+        <div class="item7">7번</div>
+        <div class="item8">8번</div>
+
+
+    </div>
+    
+</body>
+</html>

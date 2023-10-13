@@ -1,0 +1,36 @@
+#login-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#login-area .login-content{
+    padding-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    
+
+}
+
+#login-area > img{
+    width: 83px;
+    margin-bottom: 85px;
+}
+
+#login-area .login-content > .kh-normal-btn{
+    width:300px;
+
+}
+
+#login-area .login-content > .kh-normal-btn:nth-child(5){
+    margin-bottom: 10px;
+    
+}
+

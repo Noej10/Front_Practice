@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="realcal.js"></script>
+</head>
+<body>
+    
+    <table border="2" style="width: 300px;">
+        <thead>
+            <tr>
+                <td colspan="4"><div id="print" style="width: 300px; height: 20px;"></div></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 75px;"><button id="clear" onclick="printClear()" style="width: 75px;">C</button></td>
+                <td style="width: 75px;"><button style="width: 75px;">bs</button></td>
+                <td style="width: 75px;"><button id="per" onclick="perClick()" style="width: 75px;">%</button></td>
+                <td style="width: 75px;"><button id="divide" onclick="divideClick()" style="width: 75px;">/</button></td>
+            </tr>
+            <tr>
+                <td style="width: 75px;"><button id="seven" onclick="sevenClick()" style="width: 75px;">7</button></td>
+                <td style="width: 75px;"><button id="eight" onclick="eightClick()" style="width: 75px;">8</button></td>
+                <td style="width: 75px;"><button id="nine" onclick="nineClick()" style="width: 75px;">9</button></td>
+                <td style="width: 75px;"><button id="multiple" onclick="multipleClick()" style="width: 75px;">X</button></td>
+            </tr>
+            <tr>
+                <td style="width: 75px;"><button id="four" onclick="fourClick()" style="width: 75px;">4</button></td>
+                <td style="width: 75px;"><button id="five" onclick="fiveClick()" style="width: 75px;">5</button></td>
+                <td style="width: 75px;"><button id="six" onclick="sixClick()" style="width: 75px;">6</button></td>
+                <td style="width: 75px;"><button id="minus" onclick="minusClick()" style="width: 75px;">-</button></td>
+            </tr>
+            <tr>
+                <td style="width: 75px;"><button id="one" onclick="oneClick()" style="width: 75px;">1</button></td>
+                <td style="width: 75px;"><button id="two" onclick="twoClick()" style="width: 75px;">2</button></td>
+                <td style="width: 75px;"><button id="three" onclick="threeClick()" style="width: 75px;">3</button></td>
+                <td style="width: 75px;"><button id="plus" onclick="plusClick()" style="width: 75px;">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 150px;"><button id="zero" onclick="zeroClick()" style="width: 150px;">0</button></td>
+                <td style="width: 75px;"><button id="dot" onclick="dotClick()" style="width: 75px;">.</button></td>
+                <td style="width: 75px;"><button onclick="sumClick()" style="width: 75px;">=</button></td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+
+
+</body>
+</html>
